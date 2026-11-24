@@ -1,0 +1,65 @@
+{
+  "pytorch": {
+    "accuracy": 0.912,
+    "macro_f1": 0.9120225192635353,
+    "per_class_f1": {
+      "Map": 0.9284294234592445,
+      "Infographic": 0.8884462151394422,
+      "Other": 0.9191919191919192
+    },
+    "confusion_matrix": [
+      [
+        467,
+        26,
+        13
+      ],
+      [
+        26,
+        446,
+        28
+      ],
+      [
+        7,
+        32,
+        455
+      ]
+    ],
+    "classification_report": "              precision    recall  f1-score   support\n\n         Map     0.9340    0.9229    0.9284       506\n Infographic     0.8849    0.8920    0.8884       500\n       Other     0.9173    0.9211    0.9192       494\n\n    accuracy                         0.9120      1500\n   macro avg     0.9121    0.9120    0.9120      1500\nweighted avg     0.9122    0.9120    0.9121      1500\n",
+    "loss": 0.4044979764521122,
+    "device": "mps"
+  },
+  "onnx": {
+    "accuracy": 0.912,
+    "macro_f1": 0.9120225192635353,
+    "per_class_f1": {
+      "Map": 0.9284294234592445,
+      "Infographic": 0.8884462151394422,
+      "Other": 0.9191919191919192
+    },
+    "confusion_matrix": [
+      [
+        467,
+        26,
+        13
+      ],
+      [
+        26,
+        446,
+        28
+      ],
+      [
+        7,
+        32,
+        455
+      ]
+    ],
+    "classification_report": "              precision    recall  f1-score   support\n\n         Map     0.9340    0.9229    0.9284       506\n Infographic     0.8849    0.8920    0.8884       500\n       Other     0.9173    0.9211    0.9192       494\n\n    accuracy                         0.9120      1500\n   macro avg     0.9121    0.9120    0.9120      1500\nweighted avg     0.9122    0.9120    0.9121      1500\n",
+    "latency": {
+      "count": 1500,
+      "p50_ms": 6.453437439631671,
+      "p95_ms": 6.833772838581353,
+      "mean_ms": 6.264821143976103
+    }
+  },
+  "pytorch_onnx_label_agreement": 1.0
+}

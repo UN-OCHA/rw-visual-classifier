@@ -1,0 +1,46 @@
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg
+
+# Local model/checkpoint binaries outside explicit production carve-outs below
+*.pt
+*.pth
+*.onnx
+*.onnx.data
+
+# Data (generated locally; keep empty dir via .gitkeep)
+data/*
+!data/.gitkeep
+
+# Artifacts: ignore by default; allow metrics and production ONNX export
+artifacts/*
+!artifacts/.gitkeep
+!artifacts/metrics/
+!artifacts/metrics/**
+!artifacts/model.onnx
+!artifacts/model.onnx.data
+
+# Working notes / manual audit exports
+notes/
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+*.swp
